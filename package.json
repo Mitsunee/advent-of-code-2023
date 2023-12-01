@@ -15,7 +15,7 @@
     "lint": "eslint .",
     "lint:strict": "eslint --max-warnings 0 .",
     "typecheck": "tsc",
-    "test": "uvu -r esbuild-register tests -i utils"
+    "test": "uvu -r esbuild-register"
   },
   "nano-staged": {
     "**/*.{js,cjs,mjs,ts,mts,cts,json,md,yaml}": [
@@ -61,5 +61,9 @@
     "tsx": "^4.6.1",
     "typescript": "~5.2.0",
     "uvu": "^0.5.6"
+  },
+  "dependencies": {
+    "@foxkit/node-util": "^0.6.0",
+    "@foxkit/util": "^0.6.2"
   }
 }

@@ -4,6 +4,14 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@foxkit/node-util':
+    specifier: ^0.6.0
+    version: 0.6.0
+  '@foxkit/util':
+    specifier: ^0.6.2
+    version: 0.6.2
+
 devDependencies:
   '@types/node':
     specifier: ^18.19.0
@@ -490,6 +498,19 @@ packages:
     resolution: {integrity: sha512-ut5V+D+fOoWPgGGNj83GGjnntO39xDy6DWxO0wb7Jp3DcMX0TfIqdzHF85VTQkerdyGmuuMD9AKAo5KiNlf/AQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@foxkit/node-util@0.6.0:
+    resolution: {integrity: sha512-e60lhhUgW+MVHRJCtis9HfZ2+2mNGI7ZNQkVwgTe6P4WQ6dqQn/pMKjkltHPaXCRk3XWMzkLD7Iy0KMM0ZpRHw==}
+    peerDependencies:
+      picocolors: '>=1.0.0'
+    peerDependenciesMeta:
+      picocolors:
+        optional: true
+    dev: false
+
+  /@foxkit/util@0.6.2:
+    resolution: {integrity: sha512-KfQYLizA3Mh5hw+70UaWcJJuuGwI7MBKXn5HuT27uqJGWOWkhvE2SSnvi+md1NJDU/NJxXYwFtDk0yKAuN/DPQ==}
+    dev: false
 
   /@humanwhocodes/config-array@0.11.13:
     resolution: {integrity: sha512-JSBDMiDKSzQVngfRjOdFXgFfklaXI4K9nLF49Auh21lmBWRLIK3+xTErTWD4KU54pb6coM6ESE7Awz/FNU3zgQ==}
