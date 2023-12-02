@@ -2,8 +2,8 @@ import path from "path";
 import { isFile } from "@foxkit/node-util/fs";
 import { readFile } from "fs/promises";
 
-export async function getInputFileFromArg() {
-  const arg = process.argv[2];
+export async function getInputFileFromArg(argOverride?: string) {
+  const arg = argOverride ?? process.argv[2];
 
   if (!arg) {
     throw new Error("Must provide path to input file");

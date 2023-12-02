@@ -58,12 +58,14 @@
     "nano-staged": "^0.8.0",
     "prettier": "^3.1.0",
     "simple-git-hooks": "^2.9.0",
-    "tsx": "^4.6.1",
     "typescript": "~5.2.0",
     "uvu": "^0.5.6"
   },
   "dependencies": {
+    "@commander-js/extra-typings": "^11.1.0",
     "@foxkit/node-util": "^0.6.0",
-    "@foxkit/util": "^0.6.2"
+    "@foxkit/util": "^0.6.2",
+    "commander": "^11.1.0",
+    "tsx": "^4.6.2"
   }
 }
