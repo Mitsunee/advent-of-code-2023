@@ -1,13 +1,12 @@
 {
-  "name": "library-template",
+  "name": "@mitsunee/advent-of-code-2023",
   "version": "0.0.0",
-  "description": "",
-  "keywords": [],
-  "author": "YOUR_NAME_HERE",
-  "repository": "foxkit-js/library-template",
+  "description": "My solutions for Advent of Code 2023 written in TypeScript",
+  "author": "Mitsunee",
+  "repository": "mitsunee/advent-of-code-2023",
+  "private": true,
   "license": "MIT",
   "type": "module",
-  "main": "src/index.ts",
   "scripts": {
     "prepare": "simple-git-hooks",
     "format": "prettier -w .",
@@ -25,31 +24,10 @@
   "simple-git-hooks": {
     "pre-commit": "pnpm nano-staged"
   },
-  "files": [
-    "*.d.ts",
-    "index.*"
-  ],
-  "clean-publish": {
-    "packageManager": "pnpm",
-    "withoutPublish": true,
-    "tempDir": "dist",
-    "fields": [
-      "scripts",
-      "nano-staged",
-      "simple-git-hooks"
-    ]
-  },
-  "publishConfig": {
-    "access": "public",
-    "main": "index.cjs",
-    "module": "index.js",
-    "types": "index.d.ts"
-  },
   "devDependencies": {
     "@types/node": "^18.19.0",
     "@typescript-eslint/eslint-plugin": "^6.13.1",
     "@typescript-eslint/parser": "^6.13.1",
-    "clean-publish": "^4.2.0",
     "esbuild": "^0.19.8",
     "esbuild-register": "^3.5.0",
     "eslint": "^8.54.0",
