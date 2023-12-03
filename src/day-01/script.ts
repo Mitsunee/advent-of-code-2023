@@ -1,6 +1,6 @@
-import { extractNumbers } from "~/utils/extractNumbers";
-import { extractNumbersStrict } from "~/utils/extractNumbersStrict";
 import { getInputFileFromArg } from "~/utils/getInputFileFromArg";
+import { extractNumbers } from "./extractNumbers";
+import { extractNumbersStrict } from "./extractNumbersStrict";
 
 // TODO: better arg handling maybe?
 
