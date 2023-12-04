@@ -1,5 +1,5 @@
 import { Command } from "@commander-js/extra-typings";
-import { getInputFileFromArg } from "~/utils/getInputFileFromArg";
+import { getInputFileAsLines } from "~/utils/getInputFile";
 import { findNumbers } from "./findNumbers";
 import { validateNumber } from "./validateNumber";
 
@@ -11,8 +11,7 @@ const program = new Command().requiredOption(
 async function main() {
   program.parse();
   const opts = program.opts();
-  const input = await getInputFileFromArg(opts.file);
-  const lines = input.split("\n");
+  const lines = await getInputFileAsLines(opts.file);
   let sum = 0;
 
   for (let i = 0; i < lines.length; i++) {

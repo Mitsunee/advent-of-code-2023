@@ -1,4 +1,4 @@
-import { getInputFileFromArg } from "~/utils/getInputFileFromArg";
+import { getInputFileAsLines } from "~/utils/getInputFile";
 import { extractNumbers } from "./extractNumbers";
 import { extractNumbersStrict } from "./extractNumbersStrict";
 
@@ -13,8 +13,8 @@ async function main() {
   }
   const extractor =
     process.argv[3] == "2" ? extractNumbers : extractNumbersStrict;
-  const input = await getInputFileFromArg();
-  const result = input.split("\n").reduce((res, line) => {
+  const input = await getInputFileAsLines();
+  const result = input.reduce((res, line) => {
     const numbers = extractor(line);
     if (numbers.length < 1) return res;
     const val = numbers[0] * 10 + numbers[numbers.length - 1];

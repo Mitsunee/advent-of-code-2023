@@ -1,5 +1,5 @@
 import { Command } from "@commander-js/extra-typings";
-import { getInputFileFromArg } from "~/utils/getInputFileFromArg";
+import { getInputFileAsLines } from "~/utils/getInputFile";
 import { analyzeGame } from "./analyzeGame";
 import { getGamePower } from "./getGamePower";
 
@@ -11,8 +11,7 @@ const program = new Command().requiredOption(
 async function main() {
   program.parse();
   const opts = program.opts();
-  const input = await getInputFileFromArg(opts.file);
-  const games = input.split("\n");
+  const games = await getInputFileAsLines(opts.file);
   let sum = 0;
 
   console.log(`Adding game power of all games...\n`);

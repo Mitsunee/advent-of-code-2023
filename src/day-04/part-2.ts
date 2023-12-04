@@ -1,5 +1,5 @@
 import { Command } from "@commander-js/extra-typings";
-import { getInputFileFromArg } from "~/utils/getInputFileFromArg";
+import { getInputFileAsLines } from "~/utils/getInputFile";
 import { analyzeCard } from "./analyzeCard";
 import { getSharedNums } from "~/utils/getSharedNums";
 
@@ -11,11 +11,8 @@ const program = new Command().requiredOption(
 async function main() {
   program.parse();
   const opts = program.opts();
-  const input = await getInputFileFromArg(opts.file);
-  const cards = input
-    .split("\n")
-    .slice(0, -1)
-    .map(cardStr => analyzeCard(cardStr));
+  const input = await getInputFileAsLines(opts.file);
+  const cards = input.map(cardStr => analyzeCard(cardStr));
   let sum = 0;
 
   // winning more cards
