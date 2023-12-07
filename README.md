@@ -16,10 +16,20 @@ pnpm install
 pnpm typecheck && pnpm test
 ```
 
-## Running a single test
+## Running a script or single test
 
 Since the code in this repository is written in TypeScript `tsx` is needed to run scripts:
 
 ```shell
-pnpm tsx tests/path/to/test.test.ts
+pnpm tsx src/day-n/script.ts
+```
+
+Note: Some days are split into separate files like `part-1.ts` and `part-2.ts`. `tsx` can also be used to run only a single test by running it as a script!
+
+## Running tests for a specific day
+
+To run all tests in only a specific directory a special `test:dir` script is used:
+
+```shell
+pnpm test:dir src/day-n
 ```
