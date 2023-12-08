@@ -29,16 +29,6 @@ async function main() {
 
   console.log(`Found ${hands.length} hands in input`);
   console.log(`Total Winnings: ${winnings}`);
-
-  // DEBUG
-  if (isPartTwo) {
-    console.assert(winnings > 252818442, "We know it's more than this");
-  } else {
-    console.assert(
-      winnings === 253313241,
-      "We know part 1 is a different result"
-    );
-  }
 }
 
 main();
