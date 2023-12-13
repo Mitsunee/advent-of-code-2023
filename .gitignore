@@ -9,4 +9,5 @@ node_modules/
 .env.production.local
 .env.local
 dist/
-data/
+data/*
+!data/*example*.*
