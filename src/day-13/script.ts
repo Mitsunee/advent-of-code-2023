@@ -2,6 +2,7 @@ import { Command, Option } from "@commander-js/extra-typings";
 import { getInputFileAsLines } from "~/utils/getInputFile";
 import { findReflection } from "./findReflection";
 import { getReflectionSummary } from "./getReflectionSummary";
+import { findAlternateReflection } from "./findAlternateReflection";
 
 const program = new Command()
   .requiredOption("-f, --file <path>", "path to input file")
@@ -46,22 +47,15 @@ async function main() {
 
     if (isPartTwo) {
       // Is Part 2, bruteforce for new reflection where one . or # is inverted
-      const delim = "$";
-      const patternStr = pattern.join(delim); // didn't wanna deal with arrays here
-
-      for (let i = 0; i < patternStr.length; i++) {
-        if (patternStr[i] == delim) continue; // don't flip line deliminators lol
-        const newPattern = `${patternStr.slice(0, i)}${
-          patternStr[i] == "." ? "#" : "."
-        }${patternStr.slice(i + 1)}`.split(delim);
-        const newReflection = findReflection(newPattern, reflection);
-
-        if (newReflection) {
-          // updateSummary
-          sum += getReflectionSummary(newReflection);
-          break;
-        }
+      const altReflection = findAlternateReflection(pattern, reflection);
+      if (!altReflection) {
+        throw new Error(
+          `Could not find alternate reflection for pattern ${i + 1}`
+        );
       }
+
+      // updateSummary
+      sum += getReflectionSummary(altReflection);
     } else {
       // Is Part 1, simply update summary with this reflection
       // update summary
