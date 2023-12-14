@@ -18,7 +18,7 @@ async function main() {
   const isPartTwo = opts.part == "2";
   const input = await getInputFileAsLines(opts.file);
   const transformed = isPartTwo
-    ? cycleGrid(input, 1000000000, true)
+    ? cycleGrid(input, 1000000000)
     : moveGrid(input, Direction.UP);
   const value = getValueOfGrid(transformed);
   console.log(`Total load: ${value}`);
