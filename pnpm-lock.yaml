@@ -8,6 +8,9 @@ dependencies:
   '@commander-js/extra-typings':
     specifier: ^11.1.0
     version: 11.1.0(commander@11.1.0)
+  '@foxkit/list':
+    specifier: ^1.2.0
+    version: 1.2.0
   '@foxkit/node-util':
     specifier: ^0.6.0
     version: 0.6.0
@@ -509,6 +512,10 @@ packages:
     resolution: {integrity: sha512-ut5V+D+fOoWPgGGNj83GGjnntO39xDy6DWxO0wb7Jp3DcMX0TfIqdzHF85VTQkerdyGmuuMD9AKAo5KiNlf/AQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@foxkit/list@1.2.0:
+    resolution: {integrity: sha512-dXlD0JRnQNwnEj4NStYTomoM2bDVcVsKjb0P/6jWY0Ud6StMxjxlADSqv5k601Tg2Tmg1Uk5b5NULBK3cuMMxQ==}
+    dev: false
 
   /@foxkit/node-util@0.6.0:
     resolution: {integrity: sha512-e60lhhUgW+MVHRJCtis9HfZ2+2mNGI7ZNQkVwgTe6P4WQ6dqQn/pMKjkltHPaXCRk3XWMzkLD7Iy0KMM0ZpRHw==}

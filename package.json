@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "@commander-js/extra-typings": "^11.1.0",
+    "@foxkit/list": "^1.2.0",
     "@foxkit/node-util": "^0.6.0",
     "@foxkit/util": "^0.6.2",
     "commander": "^11.1.0",
