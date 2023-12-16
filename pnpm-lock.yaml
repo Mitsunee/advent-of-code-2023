@@ -13,13 +13,16 @@ dependencies:
     version: 1.2.0
   '@foxkit/node-util':
     specifier: ^0.6.0
-    version: 0.6.0
+    version: 0.6.0(picocolors@1.0.0)
   '@foxkit/util':
     specifier: ^0.6.2
     version: 0.6.2
   commander:
     specifier: ^11.1.0
     version: 11.1.0
+  picocolors:
+    specifier: ^1.0.0
+    version: 1.0.0
   tsx:
     specifier: ^4.6.2
     version: 4.6.2
@@ -517,13 +520,15 @@ packages:
     resolution: {integrity: sha512-dXlD0JRnQNwnEj4NStYTomoM2bDVcVsKjb0P/6jWY0Ud6StMxjxlADSqv5k601Tg2Tmg1Uk5b5NULBK3cuMMxQ==}
     dev: false
 
-  /@foxkit/node-util@0.6.0:
+  /@foxkit/node-util@0.6.0(picocolors@1.0.0):
     resolution: {integrity: sha512-e60lhhUgW+MVHRJCtis9HfZ2+2mNGI7ZNQkVwgTe6P4WQ6dqQn/pMKjkltHPaXCRk3XWMzkLD7Iy0KMM0ZpRHw==}
     peerDependencies:
       picocolors: '>=1.0.0'
     peerDependenciesMeta:
       picocolors:
         optional: true
+    dependencies:
+      picocolors: 1.0.0
     dev: false
 
   /@foxkit/util@0.6.2:
@@ -1429,7 +1434,6 @@ packages:
 
   /picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
-    dev: true
 
   /picomatch@2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
