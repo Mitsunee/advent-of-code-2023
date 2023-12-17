@@ -48,7 +48,7 @@ pnpm test:dir src/day-n
 
 <details>
 <summary><b>Day 10 Part 2</b></summary>
-<p>Could not figure out a way to determine whether a tile is actually [enclosed by the loop](https://ieji.de/@mitsunee/111556848211160172). I attempted upscaling the grid to make it a simple pathfinding exercise, but could not get that working yet. May revisit later</p>
+<p>Could not figure out a way to determine whether a tile is actually <a href="https://ieji.de/@mitsunee/111556848211160172">enclosed by the loop</a>. I attempted upscaling the grid to make it a simple pathfinding exercise, but could not get that working yet. May revisit later</p>
 </details>
 
 <details>
