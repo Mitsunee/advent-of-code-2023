@@ -64,4 +64,5 @@ pnpm test:dir src/day-n
 <details>
 <summary><b>Day 18 Part 2</b></summary>
 <p>My solution works in theory, but in reality uses too much RAM, so Node.js crashes with "JavaScript heap out of memory"</p>
+<p><b>Update:</b> I started attempting a solution based on the shoelace algorithm that <a href="https://gamepad.club/@Tipa/111602172381821299">Tipa</a> showed me, but could not get it to output the correct value for the AoC example, but the wikipedia example (--part debug) works as intended.</p>
 </details>
