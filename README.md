@@ -34,14 +34,14 @@ To run all tests in only a specific directory a special `test:dir` script is use
 pnpm test:dir src/day-n
 ```
 
-## Stars: 29/50
+## Stars: 30/50
 
 | Week |  Monday   | Tuesday  | Wednesday | Thursday  |  Friday   | Saturday  |  Sunday  |
 | :--: | :-------: | :------: | :-------: | :-------: | :-------: | :-------: | :------: |
 |  1   |           |          |           |           | 1st ⭐⭐  | 2nd ⭐⭐  | 3rd ⭐⭐ |
 |  2   | 4th ⭐⭐  | 5th ⭐⭐ | 6th ⭐⭐  | 7th ⭐⭐  | 8th ⭐⭐  | 9th ⭐⭐  | 10th ⭐  |
 |  3   | 11th ⭐⭐ |   12th   | 13th ⭐⭐ | 14th ⭐⭐ | 15th ⭐⭐ | 16th ⭐⭐ |   17th   |
-|  4   |   18th    |   19th   |   20th    |   21st    |   22nd    |   23rd    |   24th   |
+|  4   |  18th ⭐  |   19th   |   20th    |   21st    |   22nd    |   23rd    |   24th   |
 |  5   |   25th    |          |           |           |           |           |          |
 
 ### Skipped Stars:
@@ -59,4 +59,9 @@ pnpm test:dir src/day-n
 <details>
 <summary><b>Day 17</b></summary>
 <p>I have literally never done pathfinding algorithms and this puzzle adds an additional problem to simply comparing cost of reaching a tile, since a more expensive solution may have access to a cheaper rest of the path. I heard that Dijkstra's algorithm is easier than A*, but could not figure out how it would work with the "move at most 3 tiles in the same direction" limitation.</p>
+</details>
+
+<details>
+<summary><b>Day 18 Part 2</b></summary>
+<p>My solution works in theory, but in reality uses too much RAM, so Node.js crashes with "JavaScript heap out of memory"</p>
 </details>
