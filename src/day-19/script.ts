@@ -2,6 +2,7 @@ import { Command, Option } from "@commander-js/extra-typings";
 import { getInputFileAsLines } from "~/utils/getInputFile";
 import { parseInput } from "./parseInput";
 import { isAcceptedPart } from "./isAcceptedPart";
+import { getPossibleValues } from "./getPossibleValues";
 
 const program = new Command()
   .requiredOption("-f, --file <path>", "path to input file")
@@ -27,7 +28,20 @@ async function main() {
   );
 
   if (isPartTwo) {
-    throw new Error("Unimplemented");
+    const possibleValues = getPossibleValues(workflows);
+    console.warn(
+      "This step current checks for the specific result of the example"
+    );
+    console.log(`${possibleValues} possible values\n`);
+    console.log(
+      possibleValues == 167409079868000
+        ? "correct value"
+        : possibleValues > 167409079868000
+          ? "value too large"
+          : "value too low"
+    );
+
+    process.exit(0);
   }
 
   // Part 1

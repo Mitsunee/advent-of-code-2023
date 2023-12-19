@@ -48,7 +48,7 @@ pnpm test:dir src/day-n
 
 <details>
 <summary><b>Day 10 Part 2</b></summary>
-<p>Could not figure out a way to determine whether a tile is actually <a href="https://ieji.de/@mitsunee/111556848211160172">enclosed by the loop</a>. I attempted upscaling the grid to make it a simple pathfinding exercise, but could not get that working yet. May revisit later</p>
+<p>Could not figure out a way to determine whether a tile is actually <a href="https://ieji.de/@mitsunee/111556848211160172">enclosed by the loop</a>. I attempted upscaling the grid to make it a simple pathfinding exercise, but could not get that working yet. May revisit later.</p>
 </details>
 
 <details>
@@ -65,4 +65,9 @@ pnpm test:dir src/day-n
 <summary><b>Day 18 Part 2</b></summary>
 <p>My solution works in theory, but in reality uses too much RAM, so Node.js crashes with "JavaScript heap out of memory"</p>
 <p><b>Update:</b> I started attempting a solution based on the shoelace algorithm that <a href="https://gamepad.club/@Tipa/111602172381821299">Tipa</a> showed me, but could not get it to output the correct value for the AoC example, but the wikipedia example (--part debug) works as intended.</p>
+</details>
+
+<details>
+<summary><b>Day 19 Part 2</b></summary>
+<p>I think I understood that I need to resolve the workflow steps into a binary tree where each comparison splits a hypercube, but I'm doing something wrong. From manual checking the culling of workflows that always result in the same outcome does work properly, I'm just not splitting the hypercube correctly. May revisit later.</p>
 </details>
